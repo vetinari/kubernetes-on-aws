@@ -20,6 +20,7 @@ spec:
       tolerations:
       - key: CriticalAddonsOnly
         operator: Exists
+      serviceAccountName: zmon
       containers:
         - name: zmon-worker
           image: "pierone.stups.zalan.do/stups/zmon-worker:zv207"

@@ -23,6 +23,7 @@ spec:
       tolerations:
       - key: CriticalAddonsOnly
         operator: Exists
+      serviceAccountName: zmon
       containers:
         - name: zmon-agent
           image: "registry.opensource.zalan.do/zmon/zmon-agent-core:0.1-a25"

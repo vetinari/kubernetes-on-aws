@@ -23,6 +23,7 @@ spec:
       tolerations:
       - key: CriticalAddonsOnly
         operator: Exists
+      serviceAccountName: system
       hostNetwork: true
       containers:
       - image: registry.opensource.zalan.do/teapot/kube2iam:0.6.4

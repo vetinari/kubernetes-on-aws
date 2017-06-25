@@ -35,6 +35,7 @@ spec:
       tolerations:
       - key: CriticalAddonsOnly
         operator: Exists
+      serviceAccountName: system
       hostNetwork: true
       containers:
       - name: skipper-ingress

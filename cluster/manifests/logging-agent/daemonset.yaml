@@ -26,6 +26,7 @@ spec:
       tolerations:
       - key: CriticalAddonsOnly
         operator: Exists
+      serviceAccountName: system
       initContainers:
       - name: init-scalyr-config
         image: registry.opensource.zalan.do/stups/alpine:latest

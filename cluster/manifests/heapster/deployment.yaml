@@ -23,7 +23,7 @@ spec:
       tolerations:
       - key: CriticalAddonsOnly
         operator: Exists
-      serviceAccountName: system
+      serviceAccountName: heapster
       containers:
         - image: registry.opensource.zalan.do/teapot/heapster:v1.4.0
           name: heapster
